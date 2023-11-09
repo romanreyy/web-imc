@@ -1,4 +1,77 @@
-.gender {
-  border: 2px solid black;
-  font-weight: bold;
-};
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.titleCalculator {
+  text-align: center;
+}
+
+.buttonCalculate{
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 43%;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #e0290d, #e23f13 33.33%, #e54215 33.33%, #e04725 66.66%, #e34c1e 66.66%, #e95924); 
+  border-radius: 8px;
+  color: #ffff;
+  font-size: 18px;
+}
+
+
+.calculatorDivAgeGender, .calculatorDivWeightHeight{
+  display: inline-block;
+  height: 250px;
+  width: 50%;
+  vertical-align: top; 
+  box-shadow: 0px 3px 13px 1px rgb(0 0 0 /9%); 
+  font-size: 20px;
+  text-align: center;
+}
+.manCalculator, .womanCalculator {
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+  background: linear-gradient(to right, #8a8e9e, #737189 33.33%, #737589 33.33%, #6b6d7d 66.66%, #686d79 66.66%, #565760);
+  border-radius: 8px;
+  box-shadow: 0px 3px 13px 1px rgb(0 0 0 /9%);
+  color: #ffff;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+input {
+  height: 40px;
+  width: 150px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.imgMan {
+  position: absolute;
+  height: 80px;
+  width: 90px;
+  top: 150px;
+  left: 280px;
+}
+
+.imgWoman {
+  position: absolute;
+  height: 80px;
+  width: 90px;
+  top: 150px;
+  left: 420px;
+}
+
+.information {
+  font-size: 30px;
+}
+
+p {
+  height: auto;
+  width: 50%;
+}
