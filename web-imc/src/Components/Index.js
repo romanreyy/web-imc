@@ -1,5 +1,10 @@
+import { Link, Routes, Route} from "react-router-dom";
+import ImcDescripription from "../Containers/Que-es-el-Imc";
+
 export default function Index () {
     return (
-        <h1>hola</h1>
+        <div>
+
+        </div>
     );
 }
