@@ -32,15 +32,15 @@ body {
   font-size: 20px;
   text-align: center;
 }
-.manCalculator, .womanCalculator {
-  height: 40px;
-  width: 100px;
+.selectGen {
+  height: 50px;
+  width: 200px;
   margin: 10px;
   background: linear-gradient(to right, #8a8e9e, #737189 33.33%, #737589 33.33%, #6b6d7d 66.66%, #686d79 66.66%, #565760);
   border-radius: 8px;
   box-shadow: 0px 3px 13px 1px rgb(0 0 0 /9%);
   color: #ffff;
-  margin-top: 80px;
+  margin-top: 5px;
   margin-left: 40px;
 }
 
@@ -74,4 +74,13 @@ input {
 p {
   height: auto;
   width: 50%;
+}
+
+.information, .description { 
+  padding-left: 3%;
+}
+
+
+.buttonCalculate:active {
+  background:green;
 }
