@@ -1,4 +1,4 @@
-/*import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function List () {
     return (
@@ -26,4 +26,3 @@ export default function List () {
         </div>
     );
 }
-*/

@@ -1,0 +1,28 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 30px; /* Ajusta según sea necesario */
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .menu li:hover {
+    background-color: #ddd;
+  }

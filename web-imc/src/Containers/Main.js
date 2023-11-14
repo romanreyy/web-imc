@@ -1,14 +1,13 @@
-import Calculator from "../Components/Calculator";
+import CalculatorImc from "../Components/Calculator";
 /*import AboutImc from "../Components/AboutImc";*/
-import List from "../Components/List";
-import { Link } from "react-router-dom";
+import ShowResults from "../Components/ShowResultsImc";
 
 export default function Main () {
     return (
         <div>
-            <Calculator/>
+            <CalculatorImc/>
             {/*<AboutImc/>*/}
-            {/*<List/>*/}
+            <ShowResults />
         </div>
     );
 }
