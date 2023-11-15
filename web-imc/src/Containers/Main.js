@@ -1,13 +1,11 @@
-import CalculatorImc from "../Components/Calculator";
-/*import AboutImc from "../Components/AboutImc";*/
-import ShowResults from "../Components/ShowResultsImc";
+import CalculatorImc from "../Components/CalculatorImc";
+import AboutImc from "../Components/AboutImc";
 
 export default function Main () {
     return (
         <div>
+            <AboutImc/>
             <CalculatorImc/>
-            {/*<AboutImc/>*/}
-            <ShowResults />
         </div>
     );
 }

@@ -1,15 +1,14 @@
-/*export default function AboutImc () {
+export default function AboutImc () {
     return (
     <section> 
         <div className="aboutImc">
             <div>
-                <h2 className='information'>Sobre IMC</h2>
-                <h3 className='information'>¿Que es el IMC?</h3>   
+                <h2 className='information'>¿Que es el IMC?</h2>   
                 <p className="description">El IMC es un indice que calcula su peso ideal comparado con su peso actual tomando como datos el sexo, la edad, la altura y el peso. Puede variar segun la contextura fisica 
                     de la persona. <br/> 
                 </p>
             </div>
-            <div>
+            {/* <div>
                 <h2 className='information'>Cómo interpretar el IMC</h2>
                 <p className="description"> Entonces, ¿cómo hay que clasificar e interpretar los valores calculados por la calculadora online?
                     Dependiendo de tu sexo, edad y otros diversos factores, tu IMC se puede clasificar como bajo peso, peso normal, sobrepeso u obesidad (exceso de peso).
@@ -24,9 +23,8 @@
                     En 2022, la Organización Mundial de la Salud ha determinado que más de mil millones de personas de todo el mundo son consideradas obesas, de las cuales 650 millones son adultos,
                     340 millones adolescentes y 39 millones niños. La información sobre las estadísticas actuales y los cálculos del IMC pueden ayudar a los padres a entender mejor la salud de sus hijos
                     y hacer un seguimiento adecuado de su peso.</p> 
-            </div>
+            </div> */}
         </div>
     </section>
     );
 }
-*/
