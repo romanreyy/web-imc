@@ -22,19 +22,7 @@ export default function List () {
             <Link to='question5Imc'>
                 <h3>Variación en relación con la salud</h3>
             </Link>
-
-            <Link to='/calculatorCalories'>
-                <h3>Calculadora de peso ideal</h3>
-            </Link>
-
-            <Link to='/calculatorIdealWeight'>
-                <h3>Calculadora de peso ideal</h3>
-            </Link>
-
-            <Link to='/'>
-                <h3>Calculadora IMC</h3>
-            </Link>
-
+            
             <Link to='/question1Calories'>
                 <h3>Definiciones</h3>
             </Link>

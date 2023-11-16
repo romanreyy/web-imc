@@ -47,26 +47,6 @@ export default function DropDownMenu () {
             </li>
           </ul>
           <ul>
-            <h1>
-              Calculadoras
-            </h1>
-            <li>
-              <Link to="/calculatorCalories" onClick={closeMenu}>
-                <div className='CaloriesCalculator'>Calculadora de calorias diarias </div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/calculatorIdealWeight" onClick={closeMenu}>
-                <div className=''>Calculadora de peso ideal</div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/" onClick={closeMenu}>
-                <div className=''>Calculadora IMC</div>
-              </Link>
-            </li>
-          </ul>
-          <ul>
             <h1>Calorias</h1>
             <li>
               <Link to="/question1Calories" onClick={closeMenu}>

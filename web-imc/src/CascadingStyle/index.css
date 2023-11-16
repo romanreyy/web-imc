@@ -123,7 +123,7 @@ p {
 
 .calculator {
   position:relative;
-  top: 80px;
+  top: 10px;
 }
 
 .dropdown {
@@ -183,3 +183,31 @@ p {
  left: 250px;
 } 
 
+.resultImc {
+  position: relative;
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 100px;
+  width: 800px;
+  font-size: 18px;
+  top: 20px;
+  left: 23%;
+}
+.resultImc th,
+.resultImc td {
+  border: 1px solid black; /* Borde para las celdas */
+  padding: 8px; /* Espaciado interno */
+}
+.result {
+  position: relative;
+  top: 0px;
+  left: 175px;
+}
+
+.column1 {
+  width: 380px;
+}
+
+.column2 {
+  width: 380px;
+}

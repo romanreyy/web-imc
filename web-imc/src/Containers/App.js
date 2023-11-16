@@ -11,9 +11,6 @@ import Question1Calories from './ListCalories.js/Question1Calories';
 import Question2Calories from './ListCalories.js/Question2Calories';
 import Question3Calories from './ListCalories.js/Question3Calories';
 import Question4Calories from './ListCalories.js/Question4Calories';
-import CalculatorCalories from './Calculators.js/CalculatorCalories';
-import CalculatorIdealWeight from './Calculators.js/CalculatorIdealWeight';
-
 
 
 export default function App (){
@@ -32,9 +29,6 @@ export default function App (){
                 <Route path='/question2Calories' element={<Question2Calories />} />
                 <Route path='/question3Calories' element={<Question3Calories />} />
                 <Route path='/question4Calories' element={<Question4Calories />} />
-                <Route path='/calculatorCalories' element={<CalculatorCalories />} />
-                <Route path='/calculatorIdealWeight' element={<CalculatorIdealWeight />} />
-                <Route path='/' element={<Main />} />
             </Routes>
         </div>
     );

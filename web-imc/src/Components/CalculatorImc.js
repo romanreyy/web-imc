@@ -58,7 +58,32 @@ export default function CalculatorImc () {
             </button>
         <div>
             {result && (
-            <p>Tu índice de masa corporal es: {result} <br/> Los datos ingresados fueron: edad:{age} genero:{gender} estatura:{height} peso:{weight}</p>
+            <table className="resultImc">
+                <thead>
+                    <tr>
+                        <th className="column1">Indice de masa corporal</th>
+                        <th className="column2">Datos ingresados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr className="row1">
+                        <td className="result">{result}</td>
+                        <td>edad: {age}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>genero: {gender}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>estatura: {height}</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>peso: {weight}</td>
+                    </tr>
+                </tbody>
+            </table>
             )}
         </div>
     </div>
