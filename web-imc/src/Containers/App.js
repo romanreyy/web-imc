@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Main from './Main';
-import NavBar from '../Components/NaBar';
+import NavBar from '../Components/NavBar';
 import Question1Imc from './ListImc.js/Question1Imc';
 import Question2Imc from './ListImc.js/Question2Imc';
 import Question3Imc from './ListImc.js/Question3Imc';

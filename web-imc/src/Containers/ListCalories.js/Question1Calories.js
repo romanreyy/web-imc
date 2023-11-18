@@ -1,5 +1,6 @@
 export default function Question1Calories () {
     return (
-        <h1> Hola </h1>
+        <h1> Definicion de Calorias </h1>
+        
     );
 }

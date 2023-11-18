@@ -5,6 +5,7 @@ export default function Main () {
     return (
         <div>
             <AboutImc/>
+            <hr/>
             <CalculatorImc/>
         </div>
     );

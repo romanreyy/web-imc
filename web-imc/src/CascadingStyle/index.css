@@ -5,9 +5,11 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E5E5E5;
 }
 
 .titleCalculator {
+  top: 0px;
   text-align: center;
 }
 
@@ -65,27 +67,15 @@ label {
   transition: 0.2s ease-out;
 }
 
-.imgMan {
-  position: absolute;
-  height: 80px;
-  width: 90px;
-  top: 150px;
-  left: 280px;
-}
-
-.imgWoman {
-  position: absolute;
-  height: 80px;
-  width: 90px;
-  top: 150px;
-  left: 420px;
-}
-
 .information {
+  position: relative; 
+  top: 14px;
   font-size: 30px;
 }
 
 p {
+  position: relative;
+  top: 15px;
   height: auto;
   width: 50%;
 }
@@ -99,31 +89,9 @@ p {
   background:#2b2a2a;
 }
 
-.Nav {
-  position: absolute;
-  width: 100%;
-  height: 8%;
-  box-shadow: 0px 3px 1px rgb(0 0 0 /9%);
-}
-
-.ImgNavHome {
-  width: 120px;
-  height: 50px;
-  position: absolute;
-  left:42%;
-}
-
-.ImgGit {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 90%;
-  top: 0px;
-}
-
 .calculator {
   position:relative;
-  top: 10px;
+  top: 100px;
 }
 
 .dropdown {
@@ -131,19 +99,16 @@ p {
   display: inline-block;
 }
 
+
 .menu {
-  position: absolute;
+  position: relative;
   width: 1350px;
   height: auto;
-  top: 40px; /* Ajusta según sea necesario */
-  left: 0;
-  background-color: #f9f9f9;
+  background-color: #B8B8B8;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 10px;
   display: flex;
   flex-direction: row;
-  z-index: 1;
-  transform: translateY(10px);
+  transform: translateY(13%);
   gap: 180px;
 }
 
@@ -162,10 +127,11 @@ p {
 }
 
 .ImgMenu {
-  position: relative;
+  position: absolute;
+  top:0;
   height: 45px;
   width: 60px;
-  left: 50%;
+  z-index: 1;
 }
 
 .Questions { 
@@ -182,32 +148,38 @@ p {
  position: relative;
  left: 250px;
 } 
-
-.resultImc {
-  position: relative;
-  border: 1px solid black;
-  border-collapse: collapse;
-  height: 100px;
-  width: 800px;
-  font-size: 18px;
-  top: 20px;
-  left: 23%;
-}
-.resultImc th,
-.resultImc td {
-  border: 1px solid black; /* Borde para las celdas */
-  padding: 8px; /* Espaciado interno */
-}
 .result {
   position: relative;
-  top: 0px;
-  left: 175px;
+  text-align: center;
 }
 
-.column1 {
-  width: 380px;
+.imc {
+  position: relative;
+  left:30%;
+  display: flex;
+  gap: 50%;
+  background-color: #C8CBCB;
+  width: 40%;
+  border-radius: 8px;
 }
 
-.column2 {
-  width: 380px;
+.ImgNavHome { 
+  position: relative;
+  width: 100px;
+  left: 23%;
+
 }
+
+.ImgGit { 
+  position: relative;
+  width: 70px;
+  left: 40%;
+}
+
+.Nav {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+}
+

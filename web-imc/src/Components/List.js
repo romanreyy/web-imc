@@ -4,7 +4,7 @@ export default function List () {
     return (
         <div className="List">
             <Link to='/question1Imc'>
-                <h3>¿Cómo calcular el IMC?</h3>
+                <h3 className="Question1">¿Cómo calcular el IMC?</h3>
             </Link>
 
             <Link to='question2Imc'>

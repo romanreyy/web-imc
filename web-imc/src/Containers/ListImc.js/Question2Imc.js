@@ -2,12 +2,11 @@ export default function Question2Imc () {
     return (
         <div className="Questions">
             <h1>Correcciones al índice por edad y sexo</h1>
-
             <p className="Answer">
-            Hay que destacar que no se pueden aplicar los mismos valores de IMC en niños y adolescentes debido a su constante aumento de estatura y desarrollo corporal, por lo que se obtiene un IMC respecto a su edad y sexo. <hr />
-            Por ello, primero se deberá contar con la fecha de nacimiento y de medición para obtener la edad calculada y así ser más precisos al categorizar a este grupo de edad. <hr />
-            Después se calculará el IMC con la misma fórmula que para el adulto, y después de calcularse el IMC para este grupo de edad, el valor del IMC se comparará en tablas de crecimiento del CDC para el IMC por edad tanto para niños y niñas respectivamente para obtener la categoría del percentil. Dichos percentiles son una medida de dispersión que se utiliza con más frecuencia para evaluar el tamaño y los patrones de crecimiento de cada niño en los Estados Unidos, debido a que son menos susceptibles a presentar valores extremos y por lo tanto errores en los rangos de valores. <hr /> 
-            El percentil indica la posición relativa del número del IMC del niño entre niños del mismo sexo y edad. Las tablas de crecimiento muestran las categorías del nivel de peso que se usan con niños y adolescentes (bajo peso, peso saludable, sobrepeso y obeso).    
+            El índice de masa corporal (IMC) está diseñado como una medida general para adultos y no considera directamente la edad o el sexo. Sin embargo, en ciertos casos, especialmente en pediatría, se utilizan tablas de percentiles de IMC que tienen en cuenta la edad y el sexo para evaluar el peso de niños y adolescentes.
+            Para adultos, aunque el IMC sigue siendo una herramienta útil, puede haber diferencias en la distribución de la grasa corporal entre hombres y mujeres, así como cambios en la composición corporal con la edad. Algunos estudios sugieren que los valores de IMC asociados con riesgos para la salud pueden variar en función del sexo y la edad.
+            Por ejemplo, se ha observado que a medida que las personas envejecen, un IMC ligeramente más alto puede estar asociado con una mejor salud, aunque esto puede depender de otros factores como la salud general, la actividad física y la composición corporal.
+            Además, se están desarrollando métodos más avanzados para evaluar la salud en función de la composición corporal y otros factores más allá del IMC, como la medición de la distribución de la grasa corporal, la masa muscular y la evaluación de la salud metabólica.
             </p>
 
         </div>

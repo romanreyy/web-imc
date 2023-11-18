@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef} from "react";
 
 export default function CalculatorImc () {
-
+    const resultsRef = useRef(null);
     const [age, setAge] = useState('');
     const [height, setHeight] = useState('');
     const [weight, setWeight] = useState('');
@@ -17,6 +17,9 @@ export default function CalculatorImc () {
         } else {
           setResult(null);
         }
+        if (resultsRef.current) {
+            resultsRef.current.scrollIntoView({ behavior: 'smooth' });
+          }
       };
     return (
     <section>
@@ -34,21 +37,61 @@ export default function CalculatorImc () {
         </div> 
         <div className="calculatorDivAgeGender">
             <h2 className="titleSections">¿Cuántos años tienes? </h2>
-            <input  className="insertAge" type='tel' data-decimals="false" placeholder="21" maxLength="3" pattern="[0-9]*" value={age} onChange={(e) => setAge(e.target.value)}/> 
+            <input  
+            className="insertAge" 
+            type='tel' 
+            data-decimals="false" 
+            placeholder="21" 
+            maxLength="3" 
+            pattern="[0-9]*" 
+            value={age} onChange={(e) => setAge(e.target.value)} 
+            onKeyPress={(event) => {
+            if (!/[0-9]/.test(event.key)) {
+                event.preventDefault();
+            }
+            }}/> 
             <label for="insertAge">
                 <span>Años</span>
             </label>
         </div>
         <div className="calculatorDivWeightHeight">
             <h2 className="titleSections">¿Cuanto mides?</h2>
-            <input className="insertWeight" type="tel" data-decimals="false" placeholder="170" maxLength="3" pattern="[0-9]*" value={height} onChange={(e) => setHeight(e.target.value)}/>
+            <input 
+            className="insertWeight" 
+            type="tel" 
+            data-decimals="false" 
+            placeholder="170" 
+            maxLength="3" 
+            pattern="[0-9]*" 
+            value={height} 
+            onChange={(e) => setHeight(e.target.value)}
+            onKeyPress={(event) => {
+                if (!/[0-9]/.test(event.key)) {
+                  event.preventDefault();
+                }
+              }}
+            />
             <label for="insertWeight">
                 <span>Cm</span>
             </label>
         </div>
         <div className="calculatorDivWeightHeight">
             <h2 className="titleSections">¿Cual es su peso?</h2>
-            <input className="insertHeight" type="tel" data-decimals="false" placeholder="71" maxLength="3" pattern="[0-9]*" value={weight} onChange={(e) => setWeight(e.target.value)}/>
+            <input 
+            className="insertHeight" 
+            type="tel" 
+            data-decimals="false" 
+            placeholder="71" 
+            maxLength="3" 
+            pattern="[0-9]*" 
+            value={weight} 
+            onChange={(e) => setWeight(e.target.value)}
+            onKeyPress={(event) => {
+                if (!/[0-9]/.test(event.key)) {
+                  event.preventDefault();
+                }
+              }}
+            />
             <label for="insertHeight">
                 <span>Kg</span>
             </label>    
@@ -56,34 +99,29 @@ export default function CalculatorImc () {
             <button className="buttonCalculate" onClick={calculateImc}>
                 Calcular IMC
             </button>
-        <div>
+        <div ref={resultsRef}>
             {result && (
-            <table className="resultImc">
-                <thead>
-                    <tr>
-                        <th className="column1">Indice de masa corporal</th>
-                        <th className="column2">Datos ingresados</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr className="row1">
-                        <td className="result">{result}</td>
-                        <td>edad: {age}</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>genero: {gender}</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>estatura: {height}</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>peso: {weight}</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div>
+                    <h1 className="result">Tu resultado</h1>
+                    <div className="imc">
+                        <div>
+                            <div>
+                                Tu imc personal
+                            </div>
+                            <div>
+                                {result}
+                            </div>
+                        </div>
+                        <div>
+                            <div className="">
+                                Tu peso actual
+                            </div>
+                            <div>
+                                {weight}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     </div>
