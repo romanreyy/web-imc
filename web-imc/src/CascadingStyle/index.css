@@ -109,7 +109,7 @@ label {
 
 .menu {
   position: absolute;
-  width: 1350px;
+  width: 1312px;
   height: auto;
   top: 30px; /* Ajusta según sea necesario */
   left: 0;
@@ -189,11 +189,4 @@ label {
 
 .results {
   padding: 10px;
-}
-
-.MaleImg, .FamaleImg { 
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
 }
