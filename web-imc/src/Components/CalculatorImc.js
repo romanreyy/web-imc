@@ -1,7 +1,16 @@
-import React, { useState, useRef} from "react";
+import React, { useState} from "react";
 
 export default function CalculatorImc () {
-    const resultsRef = useRef(null);
+    $("input:checkbox").on('click', function() {
+        var $box = $(this);
+        if ($box.is(":checked")) {
+          var group = "input:checkbox[name='" + $box.attr("name") + "']";
+          $(group).prop("checked", false);
+          $box.prop("checked", true);
+        } else {
+          $box.prop("checked", false);
+        }
+      });
     const [age, setAge] = useState('');
     const [height, setHeight] = useState('');
     const [weight, setWeight] = useState('');
@@ -17,10 +26,9 @@ export default function CalculatorImc () {
         } else {
           setResult(null);
         }
-        if (resultsRef.current) {
-            resultsRef.current.scrollIntoView({ behavior: 'smooth' });
-          }
-      };
+      }; /*https://assets.yazio.com/frontend/images/icons.svg#icon-male 
+      https://assets.yazio.com/frontend/images/icons.svg#icon-female 
+      */ 
     return (
     <section>
     <div className="calculator"> 
@@ -29,11 +37,24 @@ export default function CalculatorImc () {
             </div>
         <div className="calculatorDivAgeGender">
             <h2 className="titleSections">¿Cuál es su género?</h2>
-            <select className="selectGen" value={gender} onChange={(e) => setGender(e.target.value)}>
-                <option>Seleccione su género</option>
-                <option>Hombre</option>
-                <option>Mujer</option>
-            </select>
+            <div>
+                <div>
+                    <img className="MaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-male"/>
+                </div>
+                <div>
+                    <img className="FamaleImg"  src="https://assets.yazio.com/frontend/images/icons.svg#icon-female"/>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" class="radio" value="1" name="fooby[1][]"/>
+                        Hombre
+                    </label>
+                    <label>
+                        <input type="checkbox" class="radio" value="1" name="fooby[1][]" />
+                        Mujer
+                    </label>
+                </div>
+            </div>
         </div> 
         <div className="calculatorDivAgeGender">
             <h2 className="titleSections">¿Cuántos años tienes? </h2>
@@ -99,25 +120,25 @@ export default function CalculatorImc () {
             <button className="buttonCalculate" onClick={calculateImc}>
                 Calcular IMC
             </button>
-        <div ref={resultsRef}>
+        <div>
             {result && (
                 <div>
                     <h1 className="result">Tu resultado</h1>
                     <div className="imc">
                         <div>
-                            <div>
+                            <div className="results">
                                 Tu imc personal
                             </div>
-                            <div>
+                            <div className="results">
                                 {result}
                             </div>
                         </div>
                         <div>
-                            <div className="">
+                            <div className="results">
                                 Tu peso actual
                             </div>
-                            <div>
-                                {weight}
+                            <div className="results">
+                                {weight} Kg
                             </div>
                         </div>
                     </div>
@@ -128,3 +149,21 @@ export default function CalculatorImc () {
     </section>
     );
 }
+ /*
+  const refIMC = useRef(null);
+  const refPeso = useRef(null); 
+  // Referencia a los divs de resultados
+
+  2)    // Muestra los resultados
+    setMostrarResultados(true);
+
+    3) / Desplaza hacia abajo hasta los resultados
+    if (refIMC.current && refPeso.current) {
+      refIMC.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+ */ 
+
+  /** */

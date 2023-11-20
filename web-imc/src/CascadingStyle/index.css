@@ -13,6 +13,23 @@ body {
   text-align: center;
 }
 
+.information {
+  position: relative; 
+  top: 14px;
+  font-size: 30px;
+}
+
+p {
+  position: relative;
+  top: 15px;
+  height: auto;
+  width: 50%;
+}
+
+.information, .description { 
+  padding-left: 9%;
+}
+
 .buttonCalculate{
   height: 50px;
   width: 200px;
@@ -67,49 +84,43 @@ label {
   transition: 0.2s ease-out;
 }
 
-.information {
-  position: relative; 
-  top: 14px;
-  font-size: 30px;
-}
-
-p {
-  position: relative;
-  top: 15px;
-  height: auto;
-  width: 50%;
-}
-
-.information, .description { 
-  padding-left: 9%;
-}
-
 
 .buttonCalculate:active {
   background:#2b2a2a;
 }
 
 .calculator {
-  position:relative;
+  position: relative;
   top: 100px;
+}
+
+.Nav {
+  position: relative;
+  background-color: #A4A4A4;
+  width: auto;
+  padding: 10px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  top:30px;
 }
 
-
 .menu {
-  position: relative;
+  position: absolute;
   width: 1350px;
   height: auto;
-  background-color: #B8B8B8;
+  top: 30px; /* Ajusta según sea necesario */
+  left: 0;
+  background-color: #A4A4A4;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
-  transform: translateY(13%);
-  gap: 180px;
+  padding: 10px;
+  z-index: 1;
+  gap:180px;
+  transform: translateY(10%);
 }
 
 .menu ul {
@@ -125,10 +136,10 @@ p {
 .menu li:hover {
   background-color: #ddd;
 }
-
+  
 .ImgMenu {
   position: absolute;
-  top:0;
+  top:6%;
   height: 45px;
   width: 60px;
   z-index: 1;
@@ -171,15 +182,18 @@ p {
 }
 
 .ImgGit { 
-  position: relative;
+  position: absolute;
   width: 70px;
-  left: 40%;
+  left: 90%;
 }
 
-.Nav {
-  position: relative;
-  background-color: #ffffff;
-  width: 100%;
+.results {
   padding: 10px;
 }
 
+.MaleImg, .FamaleImg { 
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
