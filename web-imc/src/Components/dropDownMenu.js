@@ -63,11 +63,6 @@ export default function DropDownMenu () {
                 <div>Metabolismo y calorías</div>
               </Link>
             </li>
-            <li>
-              <Link to="/question4Calories" onClick={closeMenu}>
-                <div>Caloría</div>
-              </Link>
-            </li>
           </ul>
           <ul>
             <h1>Sobre Nosotros</h1>

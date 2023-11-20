@@ -10,7 +10,6 @@ import DropDownMenu from '../Components/dropDownMenu';
 import Question1Calories from './ListCalories.js/Question1Calories';
 import Question2Calories from './ListCalories.js/Question2Calories';
 import Question3Calories from './ListCalories.js/Question3Calories';
-import Question4Calories from './ListCalories.js/Question4Calories';
 
 
 export default function App (){
@@ -28,7 +27,6 @@ export default function App (){
                 <Route path='/question1Calories' element={<Question1Calories />} />
                 <Route path='/question2Calories' element={<Question2Calories />} />
                 <Route path='/question3Calories' element={<Question3Calories />} />
-                <Route path='/question4Calories' element={<Question4Calories />} />
             </Routes>
         </div>
     );

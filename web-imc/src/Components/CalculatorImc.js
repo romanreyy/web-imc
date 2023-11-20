@@ -16,10 +16,7 @@ export default function CalculatorImc () {
         } else {
           setResult(null);
         }
-      }; /*https://assets.yazio.com/frontend/images/icons.svg#icon-male 
-      https://assets.yazio.com/frontend/images/icons.svg#icon-female 
-      */ 
-
+      }
     return (
     <section>
     <div className="calculator"> 
@@ -28,25 +25,17 @@ export default function CalculatorImc () {
             </div>
         <div className="calculatorDivAgeGender">
             <h2 className="titleSections">¿Cuál es su género?</h2>
-            <div>
+            <div className="selectGender">
                 <div className="Male">
-                    <div className="MaleContainer">
-                        <img className="MaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-male"/>
-                    </div>
-                    <div>
-                    <button>
-                        hombre
-                    </button>
+                    <img className="MaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-male"/>
+                    <div className="selectedMale">
+                        <input type="checkbox" id="male" name="gender" value="male"/>
                     </div>
                 </div>
                 <div className="Famale">
-                    <div className="FamaleContainer">
-                        <img className="FamaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-female"/>
-                    </div>
-                    <div>
-                        <button>
-                            mujer
-                        </button>
+                    <img className="FamaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-female"/>
+                    <div className="selectedFamale">
+                        <input type="checkbox" id="female" name="gender" value="female"/>
                     </div>
                 </div>
             </div>
@@ -144,21 +133,3 @@ export default function CalculatorImc () {
     </section>
     );
 }
- /*
-  const refIMC = useRef(null);
-  const refPeso = useRef(null); 
-  // Referencia a los divs de resultados
-
-  2)    // Muestra los resultados
-    setMostrarResultados(true);
-
-    3) / Desplaza hacia abajo hasta los resultados
-    if (refIMC.current && refPeso.current) {
-      refIMC.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-
- */ 
-
-  /** */

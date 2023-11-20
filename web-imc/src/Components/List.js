@@ -34,10 +34,6 @@ export default function List () {
             <Link to='/question3Calories'>
                 <h3>Metabolismo y calorías</h3>
             </Link>
-
-            <Link to='/question4Calories'>
-                <h3>Caloría</h3>
-            </Link>
         </div>
     );
 }
