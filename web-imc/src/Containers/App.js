@@ -16,8 +16,8 @@ import Question4Calories from './ListCalories.js/Question4Calories';
 export default function App (){
     return (
         <div>
-            <NavBar />
             <DropDownMenu />
+            <NavBar />
             <Routes>
                 <Route path='/' element={<Main />}/>
                 <Route path='/question1Imc' element={<Question1Imc/>}/>

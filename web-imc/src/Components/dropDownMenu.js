@@ -60,13 +60,26 @@ export default function DropDownMenu () {
             </li>
             <li>
               <Link to="/question3Calories" onClick={closeMenu}>
-                <div className=''>Metabolismo y calorías</div>
+                <div>Metabolismo y calorías</div>
               </Link>
             </li>
             <li>
               <Link to="/question4Calories" onClick={closeMenu}>
-                <div className=''>Caloría</div>
+                <div>Caloría</div>
               </Link>
+            </li>
+          </ul>
+          <ul>
+            <h1>Sobre Nosotros</h1>
+            <li>
+              <a href='https://docs.google.com/document/d/14SwLcKHROPOeJct885DNgHc-jnmTrxYCRs8DPWQMpYM/edit' target='__blank' onClick={closeMenu}>
+                <div>Dia a dia del proyecto</div>
+              </a>
+            </li>
+            <li>
+              <a href='https://docs.google.com/document/d/1zH9ilFMGZRemxYPFSsEY1najwoYgPpwjrMvoVJAYXG0/edit' target='__blank' onClick={closeMenu}>
+                <div>One Pager</div>
+              </a>
             </li>
           </ul>
         </div>
