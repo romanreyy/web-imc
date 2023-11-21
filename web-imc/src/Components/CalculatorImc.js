@@ -4,7 +4,6 @@ export default function CalculatorImc () {
     const [age, setAge] = useState('');
     const [height, setHeight] = useState('');
     const [weight, setWeight] = useState('');
-    const [gender, setGender] = useState('');
     const [result, setResult] = useState(null);
 
     const calculateImc = () => {
@@ -27,13 +26,13 @@ export default function CalculatorImc () {
             <h2 className="titleSections">¿Cuál es su género?</h2>
             <div className="selectGender">
                 <div className="Male">
-                    <img className="MaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-male"/>
+                    <img alt='button' className="MaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-male"/>
                     <div className="selectedMale">
                         <input type="checkbox" id="male" name="gender" value="male"/>
                     </div>
                 </div>
                 <div className="Famale">
-                    <img className="FamaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-female"/>
+                    <img alt='button' className="FamaleImg" src="https://assets.yazio.com/frontend/images/icons.svg#icon-female"/>
                     <div className="selectedFamale">
                         <input type="checkbox" id="female" name="gender" value="female"/>
                     </div>
