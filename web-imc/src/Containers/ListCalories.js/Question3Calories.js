@@ -1,8 +1,8 @@
 export default function Question3Calories () {
     return (
-        <div>
+        <div className="CaloriesAndMetabolism">
             <h1>Metabolismo y Calorias </h1>
-            <p>El metabolismo es el conjunto de procesos químicos y físicos que ocurren dentro de un organismo para mantener la vida. Incluye la conversión de alimentos en energía, la reparación de tejidos, la eliminación de desechos y otras funciones corporales esenciales.
+            <p className="CaloriesAndMetabolismInformation">El metabolismo es el conjunto de procesos químicos y físicos que ocurren dentro de un organismo para mantener la vida. Incluye la conversión de alimentos en energía, la reparación de tejidos, la eliminación de desechos y otras funciones corporales esenciales.
 
 Las calorías están directamente relacionadas con el metabolismo. El metabolismo basal es la cantidad de energía que el cuerpo necesita para mantener funciones vitales en reposo, como la respiración, la circulación sanguínea, la regulación de la temperatura corporal y otras actividades celulares y orgánicas esenciales.
 
